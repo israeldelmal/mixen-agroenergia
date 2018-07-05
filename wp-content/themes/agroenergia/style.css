@@ -1,0 +1,1690 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+* {
+	font-family: 'Quicksand', sans-serif;
+	font-size  : 1em;
+	margin     : 0px;
+	padding    : 0px;
+	outline    : none;
+	box-sizing : border-box;
+}
+
+body {
+	background-color: rgb(255, 255, 255);
+}
+
+	body > button {
+		display: none;
+	}
+
+	body > nav {
+		width           : 100%;
+		height          : 100px;
+		background-color: rgb(255, 255, 255);
+		display         : flex;
+		flex-flow       : row wrap;
+		justify-content : space-between;
+		position        : fixed;
+		box-shadow      : 0 0 3px rgba(0, 0, 0, 0.5);
+		z-index         : 1000;
+	}
+
+		body > nav > div {
+			width: 33.33%;
+		}
+
+			body > nav > div:nth-of-type(1) > a {
+				height         : 100px;
+				display        : flex;
+				justify-content: center;
+				align-items    : center;
+			}
+
+				body > nav > div:nth-of-type(1) > a > img {
+					display: block;
+					height : 80px;
+				}
+
+		body > nav > div:nth-of-type(2) {
+			display    : flex;
+			align-items: center;
+		}
+
+			body > nav > div:nth-of-type(2) > ul {
+				list-style : none;
+				display    : flex;
+				align-items: center;
+			}
+
+				body > nav > div:nth-of-type(2) > ul > li {
+					display     : inline-block;
+					margin-right: 16px;
+				}
+
+				body > nav > div:nth-of-type(2) > ul > li:last-of-type {
+					margin-right: 0px;
+				}
+
+					body > nav > div:nth-of-type(2) > ul > li > a {
+						display        : block;
+						font-weight    : 500;
+						text-decoration: none;
+						content        : rgb(0, 0, 0);
+						text-transform : uppercase;
+						color          : rgb(0, 0, 0);
+						transition     : all 0.3s ease-out;
+					}
+
+					body > nav > div:nth-of-type(2) > ul > li > a:hover {
+						color: rgb(255, 79, 59);
+					}
+
+			body > nav > div:nth-of-type(3) {
+				width           : 33.33%;
+				height          : 120px;
+				background-color: rgb(137, 198, 60);
+				transform       : skew(-10deg);
+				margin-right    : -10px;
+				color           : rgb(255, 255, 255);
+				display         : flex;
+				align-items     : center;
+			}
+
+				body > nav > div:nth-of-type(3) > section {
+					transform: skew(10deg);
+				}
+
+				body > nav > div:nth-of-type(3) > section:first-of-type {
+					margin-left : 32px;
+					margin-right: 12px;
+					font-size   : 2em;
+				}
+
+					body > nav > div:nth-of-type(3) > section:last-of-type >  p:first-of-type {
+						font-size: 0.85em;
+					}
+
+					body > nav > div:nth-of-type(3) > section:last-of-type > a  {
+						text-decoration: none;
+						color: white;
+					}
+
+					body > nav > div:nth-of-type(3) > section:last-of-type > a > p:last-of-type {
+						font-size  : 1.5em;
+						font-weight: 500;
+					}
+
+	body > header {
+		width              : 100%;
+		height             : 100vh;
+		background-size    : cover;
+		background-position: center;
+		background-repeat  : no-repeat;
+		display            : flex;
+		align-items        : center;
+		justify-content    : center;
+	}
+
+		body > header > main {
+			width: 80%;
+		}
+
+			body > header > main > h1 {
+				font-size  : 2em;
+				font-weight: 500;
+				color      : rgb(255, 255, 255);
+				white-space: pre-line;
+				margin-top : 100px;
+			}
+
+				body > header > main > h1 > span {
+					color: rgb(0, 197, 0);
+				}
+
+			body > header > main > h2 {
+				font-weight   : 300;
+				color         : rgb(255, 255, 255);
+				padding-bottom: 120px;
+				position      : relative;
+				margin-bottom : 20px;
+			}
+
+			body > header > main > h2:after {
+				content         : '';
+				width           : 1px;
+				height          : 100px;
+				background-color: rgb(255, 255, 255);
+				position        : absolute;
+				left            : 0;
+				bottom          : 0;
+				margin-left     : 32px;
+			}
+
+			body > header > main > a {
+				display        : inline-block;
+				padding        : 8px 16px;
+				font-weight    : 300;
+				border         : 1px solid rgb(255, 255, 255);
+				color          : rgb(255, 255, 255);
+				text-decoration: none;
+				border-radius  : 8px;
+				text-transform : uppercase;
+				font-size      : 0.85em;
+				transition     : all 0.3s ease-out;
+			}
+
+			body > header > main > a:hover {
+				background-color: rgba(0, 0, 0, 0.85);
+			}
+
+	body > #nosotros {
+		width           : 100%;
+		height          : 400px;
+		background-color: rgb(255, 255, 255);
+		position        : relative;
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+	}
+
+		body > #nosotros > img {
+			display   : block;
+			width     : 7.5%;
+			position  : absolute;
+			left      : 0;
+			top       : 0;
+			margin-top: -32px;
+		}
+
+		body > #nosotros > main {
+			width          : 80%;
+			margin         : auto;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+			position       : relative;
+		}
+
+			body > #nosotros > main > section {
+				width        : 70%;
+				padding-right: 36px;
+			}
+
+				body > #nosotros > main > section > h3 {
+					font-size     : 2em;
+					white-space   : pre-line;
+					font-weight   : 300;
+					text-transform: uppercase;
+					margin-bottom : 40px;
+				}
+
+					body > #nosotros > main > section > h3 > span {
+						color      : rgb(0, 197, 0);
+						font-weight: 600;
+						font-style : italic;
+					}
+
+				body > #nosotros > main > section > p {
+					font-size  : 1.25em;
+					font-weight: 300;
+				}
+
+			body > #nosotros > main > img {
+				display : block;
+				width   : 30%;
+				position: absolute;
+				right   : 0;
+			}
+
+	body > #produccion {
+		width           : 100%;
+		height          : 900px;
+		background-color: rgb(19, 168, 226);
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+	}
+
+		body > #produccion > main {
+			width: 80%;
+		}
+
+			body > #produccion > main > h4 {
+				font-size     : 2em;
+				font-weight   : 500;
+				color         : rgb(255, 255, 255);
+				white-space   : pre-line;
+				padding-bottom: 200px;
+				margin-bottom : 40px;
+				position      : relative;
+			}
+
+			body > #produccion > main > h4:after {
+				content         : '';
+				width           : 1px;
+				height          : 160px;
+				margin-left     : 32px;
+				background-color: rgb(255, 255, 255);
+				position        : absolute;
+				left            : 0;
+				bottom          : 0;
+			}
+
+				body > #produccion > main > h4 > span {
+					font-style: italic;
+				}
+
+			body > #produccion > main > section:first-of-type {
+				width          : 100%;
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+				color          : rgb(255, 255, 255);
+			}
+
+				body > #produccion > main > section:first-of-type > figure > div {
+					display        : flex;
+					align-items    : center;
+					justify-content: center;
+				}
+
+					body > #produccion > main > section:first-of-type > figure > div > img {
+						display     : block;
+						height      : 100px;
+						margin-right: 16px;
+					}
+
+					body > #produccion > main > section:first-of-type > figure > div > figcaption {
+						white-space: pre-line;
+					}
+
+						body > #produccion > main > section:first-of-type > figure > div > figcaption > strong {
+							font-weight: 500;
+							color      : rgba(0, 0, 0, 0.3);
+						}
+
+				body > #produccion > main > section:first-of-type > figure > a {
+					display         : flex;
+					width           : 40px;
+					height          : 40px;
+					font-size       : 24px;
+					background-color: rgb(255, 255, 255);
+					border-radius   : 50%;
+					text-decoration : none;
+					color           : rgb(19, 168, 226);
+					align-items     : center;
+					justify-content : center;
+					margin          : auto;
+					margin-top      : 16px;
+					transition      : all 0.3s ease-out;
+				}
+
+				body > #produccion > main > section:first-of-type > figure > a:hover {
+					background-color: rgba(0, 0, 0, 0.3)
+				}
+
+			body > #produccion > main > section:last-of-type {
+				width     : 100%;
+				margin-top: 36px;
+			}
+
+				body > #produccion > main > section:last-of-type > p {
+					display    : none;
+					font-size  : 1.2em;
+					color      : rgb(255, 255, 255);
+					font-weight: 300;
+				}
+
+				body > #produccion > main > section:last-of-type > p:first-of-type {
+					display: inherit;
+				}
+
+	body > #tipos-de-algas {
+		width           : 100%;
+		background-color: rgb(255, 255, 255);
+	}
+
+		body > #tipos-de-algas > section:first-of-type {
+			height           : 500px;
+			background-size  : cover;
+			background-repeat: no-repeat;
+			display          : flex;
+			align-items      : center;
+			justify-content  : center;
+		}
+
+			body > #tipos-de-algas > section:first-of-type > main {
+				width          : 80%;
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+				align-items    : center;
+			}
+
+				body > #tipos-de-algas > section:first-of-type > main > div {
+					color: rgb(255, 255, 255);
+				}
+
+					body > #tipos-de-algas > section:first-of-type > main > div > h5 {
+						font-size     : 1.5em;
+						font-weight   : 500;
+						white-space   : pre-line;
+						text-transform: uppercase;
+						margin-bottom : 32px;
+					}
+
+					body > #tipos-de-algas > section:first-of-type > main > div > p {
+						font-weight  : 300;
+						margin-bottom: 32px;
+					}
+
+					body > #tipos-de-algas > section:first-of-type > main > div > a {
+						display        : inline-block;
+						padding        : 8px 16px;
+						color          : rgb(255, 255, 255);
+						text-decoration: none;
+						font-weight    : 300;
+						text-transform : uppercase;
+						font-size      : 0.85em;
+						border         : 1px solid rgb(255, 255, 255);
+						border-radius  : 8px;
+						transition     : all 0.3s ease-out;
+					}
+
+					body > #tipos-de-algas > section:first-of-type > main > div > a:hover {
+						background-color: rgba(0, 0, 0, 0.5);
+					}
+
+						body > #tipos-de-algas > section:first-of-type > main > div > h5 > span {
+							font-style: italic;
+						}
+
+				body > #tipos-de-algas > section:first-of-type > main > img {
+					display: block;
+					height : 350px;
+				}
+
+		body > #tipos-de-algas > section:last-of-type {
+			width  : 100%;
+			padding: 32px 0px;
+		}
+
+			body > #tipos-de-algas > section:last-of-type > img {
+				display: block;
+				width  : 85%;
+				margin : auto;
+			}
+
+	body > #contacto {
+		width           : 100%;
+		height          : 400px;
+		background-color: rgb(238, 238, 238);
+		position        : relative;
+		display         : flex;
+		flex-flow       : row wrap;
+		justify-content : space-between;
+	}
+
+		body > #contacto > section:first-of-type {
+			width            : 50%;
+			color            : rgb(255, 255, 255);
+			background-repeat: no-repeat;
+			background-size  : cover;
+			display          : flex;
+			align-items      : center;
+			justify-content  : center;
+			flex-direction   : column;
+		}
+
+			body > #contacto > section:first-of-type > h6 {
+				font-size    : 1.5em;
+				font-weight  : 500;
+				white-space  : pre-line;
+				margin-bottom: 32px;
+			}
+
+				body > #contacto > section:first-of-type > h6 > span {
+					font-style: italic;
+				}
+
+			body > #contacto > section:first-of-type > ul {
+				list-style: none;
+			}
+
+				body > #contacto > section:first-of-type > ul > li {
+					margin-bottom: 8px;
+				}
+
+				body > #contacto > section:first-of-type > ul > li:last-of-type {
+					margin-bottom: 0px;
+				}
+
+					body > #contacto > section:first-of-type > ul > li > a {
+						text-decoration: none;
+						color: #223010;
+					}
+
+		body > #contacto > section:last-of-type {
+			width          : 50%;
+			display        : flex;
+			align-items    : center;
+			justify-content: center;
+		}
+
+			body > #contacto > section:last-of-type div.wpcf7 {
+				width          : 75%;
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+			}
+
+			body > #contacto > section:last-of-type div.wpcf7 form {
+				width          : 100%;
+			}
+
+				body > #contacto > section:last-of-type form input {
+					width           : 100%;
+					background-color: rgba(0, 0, 0, 0.1);
+					border          : none;
+					border-radius   : 8px;
+					padding         : 8px;
+				}
+
+				body > #contacto > section:last-of-type form input:nth-of-type(-n+4) {
+					margin-bottom: 8px;
+				}
+
+				body > #contacto > section:last-of-type form textarea {
+					width           : 100%;
+					background-color: rgba(0, 0, 0, 0.1);
+					border          : none;
+					border-radius   : 8px;
+					padding         : 8px;
+					margin-bottom   : 8px;
+				}
+
+				body > #contacto > section:last-of-type form input[type="submit"] {
+					width           : 100%;
+					background-color: rgb(140, 196, 68);
+					border          : none;
+					border-radius   : 8px;
+					padding         : 8px;
+					cursor          : pointer;
+					color           : rgb(255, 255, 255);
+				}
+
+	body > footer {
+		position: relative;
+		width           : 100%;
+		padding-top     : 60px;
+		padding-bottom  : 60px;
+		background-color: rgb(49, 49, 49);
+	}
+
+		body > footer > header {
+			width          : 80%;
+			margin         : auto;
+			display        : flex;
+			align-items    : center;
+			justify-content: center;
+			position       : relative;
+			padding-bottom : 32px;
+			margin-bottom  : 32px;
+		}
+
+		body > footer > header:before {
+			content         : '';
+			height          : 2px;
+			width           : 100%;
+			background-color: rgb(140, 196, 68);
+			position        : absolute;
+			left            : 0;
+			bottom          : 0;
+		}
+
+			body > footer > header > img {
+				display: block;
+				width  : 320px;
+			}
+
+			body > footer > header > ul {
+				list-style: none;
+				position  : absolute;
+				right     : 0;
+				bottom    : 0;
+				padding-bottom: 32px;
+			}
+
+				body > footer > header > ul > li {
+					display     : inline-block;
+					margin-right: 8px;
+				}
+
+				body > footer > header > ul > li:last-of-type {
+					margin-right: 0px;
+				}
+
+					body > footer > header > ul > li > a {
+						display         : block;
+						width           : 40px;
+						height          : 40px;
+						font-size       : 24px;
+						border-radius   : 50%;
+						background-color: rgb(255, 148, 0);
+						display         : flex;
+						align-items     : center;
+						justify-content : center;
+						color           : rgb(49, 49, 49);
+						text-decoration : none;
+						transition      : all 0.3s ease-out;
+					}
+
+					body > footer > header > ul > li > a:hover {
+						background-color: rgb(185, 107, 0);
+					}
+
+		body > footer > footer {
+			width : 80%;
+			margin: auto;
+		}
+
+			body > footer > footer > ul {
+				list-style     : none;
+				width          : 100%;
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+			}
+
+				body > footer > footer > ul > li {
+					display: inline-block;
+					color  : rgba(0, 0, 0, 0.5);
+				}
+
+					body > footer > footer > ul > li > a {
+						text-decoration: none;
+						color: white;
+					}
+
+footer > .footer-rights {
+	position: absolute;
+	text-align: center;
+    background-color: rgb(140, 196, 68);
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding: 10px 0;
+}
+
+footer > .footer-rights p {
+	display: inline-block;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 11px;
+	color: rgba(0, 0, 0, 1);
+	margin: 0;
+}
+
+footer > .footer-rights a {
+	font-size: 11px;
+	color: rgba(200, 200, 200, 1);
+	text-decoration: none!important;
+	outline: none!important;
+}
+
+
+@media all and (orientation: landscape) and (max-width: 1030px) {
+	body > button {
+		background-color: transparent;
+		border          : none;
+		position        : fixed;
+		display         : block;
+		width           : 32px;
+		z-index         : 1100;
+		top             : 0;
+		left            : 0;
+		margin-top      : 32px;
+		margin-left     : 32px;
+	}
+
+		body > button > span {
+			display         : block;
+			background-color: rgb(255, 255, 255);
+			width           : 100%;
+			height          : 1px;
+			margin-bottom   : 4px;
+			box-shadow      : 0 0 1px rgba(0, 0, 0, 0.75);
+			transition      : all 0.3s ease-out;
+		}
+
+		body > button > span:last-of-type {
+			margin-bottom: 0px;
+		}
+
+		.active-button {
+			margin-bottom   : 8px;
+			box-shadow      : none;
+			background-color: rgb(0, 191, 0);
+		}
+
+	body > nav {
+		width           : 35%;
+		height          : 100vh;
+		background-color: rgb(255, 255, 255);
+		display         : block;
+		margin-left     : -35%;
+		transition      : all 0.3s ease-out;
+	}
+
+	.active-menu {
+		margin-left: 0px;
+	}
+
+			body > nav > div {
+				width: 100%;
+			}
+
+				body > nav > div:nth-of-type(1) > a {
+					height       : auto;
+					width        : auto;
+					display      : block;
+					margin-top   : 80px;
+					margin-bottom: 32px;
+				}
+
+					body > nav > div:nth-of-type(1) > a > img {
+						display: block;
+						height : auto;
+						width  : 35%;
+						margin : auto;
+					}
+
+			body > nav > div:nth-of-type(2) {
+				display    : flex;
+				align-items: center;
+			}
+
+				body > nav > div:nth-of-type(2) > ul {
+					width         : 100%;
+					list-style    : none;
+					display       : flex;
+					align-items   : center;
+					flex-direction: column;
+				}
+
+					body > nav > div:nth-of-type(2) > ul > li {
+						display     : block;
+						width       : 100%;
+						margin-right: 0px;
+						text-align  : center;
+					}
+
+					body > nav > div:nth-of-type(2) > ul > li:last-of-type {
+						margin-right: 0px;
+					}
+
+						body > nav > div:nth-of-type(2) > ul > li > a {
+							padding: 16px;
+						}
+
+						body > nav > div:nth-of-type(2) > ul > li > a:hover {
+							color: rgb(255, 79, 59);
+						}
+
+				body > nav > div:nth-of-type(3) {
+					width           : 100%;
+					height          : 120px;
+					background-color: rgb(137, 198, 60);
+					transform       : skew(0deg);
+					margin-right    : 0px;
+					color           : rgb(255, 255, 255);
+					display         : flex;
+					align-items     : center;
+					justify-content : center;
+					position        : absolute;
+					bottom          : 0;
+					left            : 0;
+				}
+
+					body > nav > div:nth-of-type(3) > section {
+						transform: skew(0deg);
+					}
+
+					body > nav > div:nth-of-type(3) > section:first-of-type {
+						margin-left : 0px;
+					}
+
+						body > nav > div:nth-of-type(3) > section:last-of-type > p:first-of-type {
+							font-size: 0.85em;
+						}
+
+						body > nav > div:nth-of-type(3) > section:last-of-type > p:last-of-type {
+							font-size  : 1.5em;
+							font-weight: 500;
+						}
+
+		body > header {
+			width              : 100%;
+			height             : 100vh;
+			background-image   : url('assets/images/header-bg.jpg');
+			background-size    : cover;
+			background-position: center;
+			background-repeat  : no-repeat;
+			display            : flex;
+			align-items        : center;
+			justify-content    : center;
+		}
+
+			body > header > main {
+				width: 80%;
+				text-align: center;
+			}
+
+				body > header > main > h1 {
+					margin-top : 0px;
+				}
+
+				body > header > main > h2 {
+					padding-bottom: 0px;
+					margin-bottom : 80px;
+				}
+
+				body > header > main > h2:after {
+					display: none;
+				}
+
+			body > #nosotros > img {
+				display: none;
+			}
+
+				body > #nosotros > main > section {
+					padding-right: 0px;
+				}
+
+					body > #nosotros > main > section > h3 {
+						font-size     : 2em;
+						white-space   : inherit;
+						font-weight   : 300;
+						text-transform: uppercase;
+						margin-bottom : 40px;
+					}
+
+						body > #nosotros > main > section > h3 > span {
+							color      : rgb(0, 197, 0);
+							font-weight: 600;
+							font-style : italic;
+						}
+
+					body > #nosotros > main > section > p {
+						font-size  : 1em;
+						font-weight: 300;
+					}
+
+				body > #nosotros > main > img {
+					display: none;
+				}
+
+		body > #produccion {
+			width           : 100%;
+			height          : 100vh;
+			background-color: rgb(19, 168, 226);
+			display         : flex;
+			align-items     : center;
+			justify-content : center;
+		}
+
+			body > #produccion > main {
+				width: 80%;
+			}
+
+				body > #produccion > main > h4 {
+					font-size     : 2em;
+					font-weight   : 500;
+					color         : rgb(255, 255, 255);
+					white-space   : pre-line;
+					padding-bottom: 0px;
+					margin-bottom : 40px;
+					position      : relative;
+				}
+
+				body > #produccion > main > h4:after {
+					display: none;
+				}
+
+				body > #produccion > main > section:first-of-type {
+					width          : 100%;
+					display        : flex;
+					flex-flow      : row wrap;
+					justify-content: space-between;
+					color          : rgb(255, 255, 255);
+				}
+
+					body > #produccion > main > section:first-of-type > figure {
+						width: 33%;
+					}
+
+						body > #produccion > main > section:first-of-type > figure > div > img {
+							height: 75px;
+						}
+
+					body > #produccion > main > section:last-of-type > p {
+						font-size: 1em;
+					}
+
+				body > #tipos-de-algas > section:first-of-type > main > div {
+					width: 65%;
+					color: rgb(255, 255, 255);
+				}
+
+				body > #tipos-de-algas > section:first-of-type > main > img {
+					display: block;
+					height : 220px;
+				}
+}
+
+@media all and (orientation: landscape) and (max-width: 740px) {
+	body > nav > div:nth-of-type(1) > a {
+		margin-bottom: 24px;
+	}
+
+		body > nav > div:nth-of-type(1) > a > img {
+			width: 25%;
+		}
+
+			body > nav > div:nth-of-type(2) {
+				display    : flex;
+				align-items: center;
+			}
+
+				body > nav > div:nth-of-type(2) > ul {
+					width         : 100%;
+					list-style    : none;
+					display       : flex;
+					align-items   : center;
+					flex-direction: column;
+				}
+
+					body > nav > div:nth-of-type(2) > ul > li {
+						display     : block;
+						width       : 100%;
+						margin-right: 0px;
+						text-align  : center;
+					}
+
+					body > nav > div:nth-of-type(2) > ul > li:last-of-type {
+						margin-right: 0px;
+					}
+
+						body > nav > div:nth-of-type(2) > ul > li > a {
+							font-size: 0.85em;
+							padding  : 6px;
+						}
+
+				body > nav > div:nth-of-type(3) {
+					height: 90px;
+				}
+
+					body > nav > div:nth-of-type(3) > section {
+						transform: skew(0deg);
+					}
+
+					body > nav > div:nth-of-type(3) > section:first-of-type {
+						margin-left : 0px;
+					}
+
+						body > nav > div:nth-of-type(3) > section:last-of-type > p:first-of-type {
+							font-size: 0.85em;
+						}
+
+						body > nav > div:nth-of-type(3) > section:last-of-type > p:last-of-type {
+							font-size: 1em;
+						}
+
+			body > header > main {
+				width: 90%;
+			}
+
+				body > header > main > h1 {
+					margin-top: 0px;
+				}
+
+				body > header > main > h2 {
+					margin-bottom : 32px;
+				}
+
+					body > #nosotros > main > section > h3 {
+						font-size     : 2em;
+						white-space   : inherit;
+						font-weight   : 300;
+						text-transform: uppercase;
+						margin-bottom : 40px;
+					}
+
+						body > #nosotros > main > section > h3 > span {
+							color      : rgb(0, 197, 0);
+							font-weight: 600;
+							font-style : italic;
+						}
+
+					body > #nosotros > main > section > p {
+						font-size  : 1em;
+						font-weight: 300;
+					}
+
+				body > #nosotros > main > img {
+					display: none;
+				}
+
+		body > #produccion {
+			height: auto;
+			padding: 32px 0px;
+		}
+
+			body > #produccion > main {
+				width: 90%;
+			}
+
+				body > #produccion > main > h4 {
+					font-size    : 1.5em;
+					margin-bottom: 24px;
+				}
+
+				body > #produccion > main > h4:after {
+					display: none;
+				}
+
+				body > #produccion > main > section:first-of-type {
+					width          : 100%;
+					display        : flex;
+					flex-flow      : row wrap;
+					justify-content: space-between;
+					color          : rgb(255, 255, 255);
+				}
+
+					body > #produccion > main > section:first-of-type > figure {
+						width: 33%;
+					}
+
+						body > #produccion > main > section:first-of-type > figure > div > img {
+							height: 50px;
+						}
+
+						body > #produccion > main > section:first-of-type > figure > div > figcaption {
+							white-space: normal;
+						}
+
+					body > #produccion > main > section:last-of-type > p {
+						font-size: 1em;
+					}
+
+		body > #tipos-de-algas > section:first-of-type {
+			height : auto;
+			padding: 48px 0px;
+		}
+
+			body > #tipos-de-algas > section:first-of-type > main {
+				width: 90%;
+			}
+
+				body > #tipos-de-algas > section:first-of-type > main > div {
+					width: 65%;
+					color: rgb(255, 255, 255);
+				}
+
+				body > #tipos-de-algas > section:first-of-type > main > img {
+					display: block;
+					width  : 30%;
+					height : auto;
+				}
+}
+
+@media all and (orientation: portrait) and (max-width: 770px) {
+	body > button {
+		background-color: transparent;
+		border          : none;
+		position        : fixed;
+		display         : block;
+		width           : 32px;
+		z-index         : 1100;
+		top             : 0;
+		left            : 0;
+		margin-top      : 32px;
+		margin-left     : 32px;
+	}
+
+		body > button > span {
+			display         : block;
+			background-color: rgb(255, 255, 255);
+			width           : 100%;
+			height          : 1px;
+			margin-bottom   : 4px;
+			box-shadow      : 0 0 1px rgba(0, 0, 0, 0.75);
+			transition      : all 0.3s ease-out;
+		}
+
+		body > button > span:last-of-type {
+			margin-bottom: 0px;
+		}
+
+		.active-button {
+			margin-bottom   : 8px;
+			box-shadow      : none;
+			background-color: rgb(0, 191, 0);
+		}
+
+	body > nav {
+		width           : 45%;
+		height          : 100vh;
+		background-color: rgb(255, 255, 255);
+		margin-left     : -45%;
+		transition      : all 0.3s ease-out;
+		display         : block;
+	}
+
+	.active-menu {
+		margin-left: 0px;
+	}
+
+			body > nav > div {
+				width: 100%;
+			}
+
+				body > nav > div:nth-of-type(1) > a {
+					height       : auto;
+					width        : auto;
+					display      : block;
+					margin-top   : 80px;
+					margin-bottom: 32px;
+				}
+
+					body > nav > div:nth-of-type(1) > a > img {
+						display: block;
+						height : auto;
+						width  : 35%;
+						margin : auto;
+					}
+
+			body > nav > div:nth-of-type(2) {
+				display    : flex;
+				align-items: center;
+			}
+
+				body > nav > div:nth-of-type(2) > ul {
+					width         : 100%;
+					list-style    : none;
+					display       : flex;
+					align-items   : center;
+					flex-direction: column;
+				}
+
+					body > nav > div:nth-of-type(2) > ul > li {
+						display     : block;
+						width       : 100%;
+						margin-right: 0px;
+						text-align  : center;
+					}
+
+					body > nav > div:nth-of-type(2) > ul > li:last-of-type {
+						margin-right: 0px;
+					}
+
+						body > nav > div:nth-of-type(2) > ul > li > a {
+							padding: 16px;
+						}
+
+						body > nav > div:nth-of-type(2) > ul > li > a:hover {
+							color: rgb(255, 79, 59);
+						}
+
+				body > nav > div:nth-of-type(3) {
+					width           : 100%;
+					height          : 120px;
+					background-color: rgb(137, 198, 60);
+					transform       : skew(0deg);
+					margin-right    : 0px;
+					color           : rgb(255, 255, 255);
+					display         : flex;
+					align-items     : center;
+					justify-content : center;
+					position        : absolute;
+					bottom          : 0;
+					left            : 0;
+				}
+
+					body > nav > div:nth-of-type(3) > section {
+						transform: skew(0deg);
+					}
+
+					body > nav > div:nth-of-type(3) > section:first-of-type {
+						margin-left : 0px;
+					}
+
+						body > nav > div:nth-of-type(3) > section:last-of-type > p:first-of-type {
+							font-size: 0.85em;
+						}
+
+						body > nav > div:nth-of-type(3) > section:last-of-type > p:last-of-type {
+							font-size  : 1.5em;
+							font-weight: 500;
+						}
+
+			body > header > main {
+				width: 90%;
+				text-align: center;
+			}
+
+				body > header > main > h1 {
+					font-size  : 2em;
+					font-weight: 500;
+					color      : rgb(255, 255, 255);
+					white-space: pre-line;
+					margin-top : 100px;
+				}
+
+					body > header > main > h1 > span {
+						color: rgb(0, 197, 0);
+					}
+
+				body > header > main > h2 {
+					padding-bottom: 0px;
+					margin-bottom : 40px;
+				}
+
+				body > header > main > h2:after {
+					display: none;
+				}
+
+			body > #nosotros > img {
+				display: none;
+			}
+
+			body > #nosotros > main {
+				width: 90%;
+			}
+
+				body > #nosotros > main > section {
+					width        : 100%;
+					padding-right: 36px;
+				}
+
+					body > #nosotros > main > section > p {
+						font-size: 1em;
+					}
+
+				body > #nosotros > main > img {
+					display: none;
+				}
+
+		body > #produccion {
+			height: 100vh;
+		}
+
+			body > #produccion > main {
+				width: 90%;
+			}
+
+				body > #produccion > main > h4 {
+					padding-bottom: 0px;
+					margin-bottom : 40px;
+				}
+
+				body > #produccion > main > h4:after {
+					display: none;
+				}
+
+				body > #produccion > main > section:first-of-type > figure {
+					width: 32%;
+				}
+
+					body > #produccion > main > section:first-of-type > figure > div {
+						display        : flex;
+						align-items    : center;
+						justify-content: center;
+						flex-direction : column;
+					}
+
+						body > #produccion > main > section:first-of-type > figure > div > img {
+							margin-right : 0px;
+							margin-bottom: 8px;
+						}
+
+						body > #produccion > main > section:first-of-type > figure > div > figcaption {
+							white-space: normal;
+							text-align: center;
+						}
+
+					body > #produccion > main > section:last-of-type > p {
+						display  : none;
+						font-size: 1em;
+					}
+
+			body > #tipos-de-algas > section:first-of-type {
+				height : auto;
+				padding: 52px 0px;
+			}
+
+				body > #tipos-de-algas > section:first-of-type > main {
+					width: 90%;
+				}
+
+					body > #tipos-de-algas > section:first-of-type > main > div {
+						width: 65%;
+					}
+
+					body > #tipos-de-algas > section:first-of-type > main > img {
+						height: auto;
+						width : 30%;
+					}
+
+			body > #tipos-de-algas > section:last-of-type {
+				width  : 100%;
+				padding: 32px 0px;
+			}
+
+				body > #tipos-de-algas > section:last-of-type > img {
+					display: block;
+					width  : 85%;
+					margin : auto;
+				}
+}
+
+@media all and (orientation: portrait) and (max-width: 420px) {
+	body > button {
+		background-color: transparent;
+		border          : none;
+		position        : fixed;
+		display         : block;
+		width           : 32px;
+		z-index         : 1100;
+		top             : 0;
+		left            : 0;
+		margin-top      : 32px;
+		margin-left     : 32px;
+	}
+
+		body > button > span {
+			display         : block;
+			background-color: rgb(255, 255, 255);
+			width           : 100%;
+			height          : 1px;
+			margin-bottom   : 4px;
+			box-shadow      : 0 0 1px rgba(0, 0, 0, 0.75);
+			transition      : all 0.3s ease-out;
+		}
+
+		body > button > span:last-of-type {
+			margin-bottom: 0px;
+		}
+
+		.active-button {
+			margin-bottom   : 8px;
+			box-shadow      : none;
+			background-color: rgb(0, 191, 0);
+		}
+
+	body > nav {
+		width           : 75%;
+		height          : 100vh;
+		background-color: rgb(255, 255, 255);
+		margin-left     : -75%;
+		transition      : all 0.3s ease-out;
+		display         : block;
+	}
+
+	.active-menu {
+		margin-left: 0px;
+	}
+
+			body > nav > div {
+				width: 100%;
+			}
+
+				body > nav > div:nth-of-type(1) > a {
+					height       : auto;
+					width        : auto;
+					display      : block;
+					margin-top   : 80px;
+					margin-bottom: 32px;
+				}
+
+					body > nav > div:nth-of-type(1) > a > img {
+						display: block;
+						height : auto;
+						width  : 35%;
+						margin : auto;
+					}
+
+			body > nav > div:nth-of-type(2) {
+				display    : flex;
+				align-items: center;
+			}
+
+				body > nav > div:nth-of-type(2) > ul {
+					width         : 100%;
+					list-style    : none;
+					display       : flex;
+					align-items   : center;
+					flex-direction: column;
+				}
+
+					body > nav > div:nth-of-type(2) > ul > li {
+						display     : block;
+						width       : 100%;
+						margin-right: 0px;
+						text-align  : center;
+					}
+
+					body > nav > div:nth-of-type(2) > ul > li:last-of-type {
+						margin-right: 0px;
+					}
+
+						body > nav > div:nth-of-type(2) > ul > li > a {
+							padding: 16px;
+						}
+
+						body > nav > div:nth-of-type(2) > ul > li > a:hover {
+							color: rgb(255, 79, 59);
+						}
+
+				body > nav > div:nth-of-type(3) {
+					width           : 100%;
+					height          : 120px;
+					background-color: rgb(137, 198, 60);
+					transform       : skew(0deg);
+					margin-right    : 0px;
+					color           : rgb(255, 255, 255);
+					display         : flex;
+					align-items     : center;
+					justify-content : center;
+					position        : absolute;
+					bottom          : 0;
+					left            : 0;
+				}
+
+					body > nav > div:nth-of-type(3) > section {
+						transform: skew(0deg);
+					}
+
+					body > nav > div:nth-of-type(3) > section:first-of-type {
+						margin-left : 0px;
+					}
+
+						body > nav > div:nth-of-type(3) > section:last-of-type > p:first-of-type {
+							font-size: 0.85em;
+						}
+
+						body > nav > div:nth-of-type(3) > section:last-of-type > p:last-of-type {
+							font-size  : 1.5em;
+							font-weight: 500;
+						}
+
+			body > header > main {
+				width: 90%;
+			}
+
+				body > header > main > h1 {
+					font-size  : 1.75em;
+					margin-top : 0px;
+				}
+
+					body > header > main > h1 > span {
+						color: rgb(0, 197, 0);
+					}
+
+				body > header > main > h2 {
+					font-size: 1.25em;
+				}
+
+		body > #nosotros {
+			height : auto;
+			padding: 32px 0px;
+		}
+
+			body > #nosotros > main {
+				width          : 80%;
+				margin         : auto;
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+				position       : relative;
+			}
+
+				body > #nosotros > main > section {
+					width        : 100%;
+					padding-right: 0px;
+				}
+
+					body > #nosotros > main > section > h3 {
+						font-size: 1.75em;
+					}
+
+					body > #nosotros > main > section > p {
+						font-size: 1em;
+					}
+
+				body > #nosotros > main > img {
+					display: none;
+				}
+
+		body > #produccion {
+			height: 100vh;
+		}
+
+			body > #produccion > main {
+				width: 90%;
+			}
+
+				body > #produccion > main > h4 {
+					font-size     : 1.75em;
+					padding-bottom: 0px;
+				}
+
+				body > #produccion > main > h4:after {
+					display: none;
+				}
+
+				body > #produccion > main > section:first-of-type {
+					width          : 100%;
+					display        : flex;
+					flex-flow      : row wrap;
+					justify-content: space-between;
+					color          : rgb(255, 255, 255);
+				}
+
+					body > #produccion > main > section:first-of-type > figure > div {
+						display        : flex;
+						align-items    : center;
+						justify-content: center;
+					}
+
+						body > #produccion > main > section:first-of-type > figure > div > img {
+							display     : block;
+							height      : 75px;
+							margin-right: 0px;
+						}
+
+						body > #produccion > main > section:first-of-type > figure > div > figcaption {
+							display: none;
+						}
+
+							body > #produccion > main > section:first-of-type > figure > div > figcaption > strong {
+								font-weight: 500;
+								color      : rgba(0, 0, 0, 0.3);
+							}
+
+					body > #produccion > main > section:first-of-type > figure > a {
+						display         : flex;
+						width           : 40px;
+						height          : 40px;
+						font-size       : 24px;
+						background-color: rgb(255, 255, 255);
+						border-radius   : 50%;
+						text-decoration : none;
+						color           : rgb(19, 168, 226);
+						align-items     : center;
+						justify-content : center;
+						margin          : auto;
+						margin-top      : 16px;
+						transition      : all 0.3s ease-out;
+					}
+
+					body > #produccion > main > section:first-of-type > figure > a:hover {
+						background-color: rgba(0, 0, 0, 0.3)
+					}
+
+				body > #produccion > main > section:last-of-type {
+					width     : 100%;
+					margin-top: 36px;
+				}
+
+					body > #produccion > main > section:last-of-type > p {
+						font-size: 1em;
+					}
+
+		body > #tipos-de-algas {
+			width           : 100%;
+			background-color: rgb(255, 255, 255);
+		}
+
+				body > #tipos-de-algas > section:first-of-type > main {
+					width          : 90%;
+					display        : flex;
+					flex-flow      : row wrap;
+					justify-content: space-between;
+					align-items    : center;
+				}
+
+					body > #tipos-de-algas > section:first-of-type > main > div {
+						width: 100%;
+					}
+
+						body > #tipos-de-algas > section:first-of-type > main > div > h5 {
+							font-size     : 1.5em;
+							font-weight   : 500;
+							white-space   : pre-line;
+							text-transform: uppercase;
+							margin-bottom : 32px;
+						}
+
+						body > #tipos-de-algas > section:first-of-type > main > div > p {
+							font-weight  : 300;
+							margin-bottom: 32px;
+						}
+
+						body > #tipos-de-algas > section:first-of-type > main > div > a {
+							display        : inline-block;
+							padding        : 8px 16px;
+							color          : rgb(255, 255, 255);
+							text-decoration: none;
+							font-weight    : 300;
+							text-transform : uppercase;
+							font-size      : 0.85em;
+							border         : 1px solid rgb(255, 255, 255);
+							border-radius  : 8px;
+							transition     : all 0.3s ease-out;
+						}
+
+						body > #tipos-de-algas > section:first-of-type > main > div > a:hover {
+							background-color: rgba(0, 0, 0, 0.5);
+						}
+
+							body > #tipos-de-algas > section:first-of-type > main > div > h5 > span {
+								font-style: italic;
+							}
+
+					body > #tipos-de-algas > section:first-of-type > main > img {
+						display   : block;
+						height    : auto;
+						width     : 220px;
+						margin    : auto;
+						margin-top: 32px;
+					}
+
+			body > #tipos-de-algas > section:last-of-type {
+				width  : 100%;
+				padding: 32px 0px;
+			}
+
+				body > #tipos-de-algas > section:last-of-type > img {
+					display: block;
+					width  : 85%;
+					margin : auto;
+				}
+
+		body > #contacto {
+			width           : 100%;
+			height          : auto;
+			background-color: rgb(238, 238, 238);
+			position        : relative;
+			display         : flex;
+			flex-flow       : row wrap;
+			justify-content : space-between;
+		}
+
+			body > #contacto > section:first-of-type {
+				width           : 100%;
+				color           : rgb(255, 255, 255);
+				background-image: none;
+				background-color: rgb(140, 196, 68);
+				padding         : 32px 0px;
+			}
+
+			body > #contacto > section:last-of-type {
+				width  : 100%;
+				padding: 32px 0px;
+			}
+
+				body > #contacto > section:last-of-type > form {
+					width: 90%;
+				}
+
+					body > #contacto > section:last-of-type > form > input:nth-of-type(-n+4) {
+						width: 100%;
+					}
+
+		body > footer {
+			position: relative;
+			padding-top   : 32px;
+			padding-bottom: 32px;
+		}
+
+			body > footer > header {
+				width: 90%;
+			}
+
+				body > footer > header > img {
+					display: block;
+					width  : 180px;
+				}
+
+						body > footer > header > ul > li > a {
+							width        : 32px;
+							height       : 32px;
+							font-size    : 18px;
+							border-radius: 50%;
+						}
+
+			body > footer > footer {
+				width: 90%;
+				margin-bottom: 20px;
+			}
+
+				body > footer > footer > ul {
+					list-style     : none;
+					width          : 100%;
+					display        : flex;
+					flex-flow      : none;
+					align-items    : center;
+					justify-content: space-between;
+					flex-direction : column;
+				}
+
+					body > footer > footer > ul > li {
+						margin-bottom: 8px;
+					}
+
+					body > footer > footer > ul > li:last-of-type {
+						margin-bottom: 0px;
+					}
+
+}
